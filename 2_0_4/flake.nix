@@ -11,6 +11,7 @@
   inputs.src-gcplat-2_0_4.ref   = "refs/tags/2.0.4";
   inputs.src-gcplat-2_0_4.owner = "disruptek";
   inputs.src-gcplat-2_0_4.repo  = "gcplat";
+  inputs.src-gcplat-2_0_4.dir   = "";
   inputs.src-gcplat-2_0_4.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

@@ -11,6 +11,7 @@
   inputs.src-gcplat-master.ref   = "refs/heads/master";
   inputs.src-gcplat-master.owner = "disruptek";
   inputs.src-gcplat-master.repo  = "gcplat";
+  inputs.src-gcplat-master.dir   = "";
   inputs.src-gcplat-master.type  = "github";
   
   inputs."npeg".owner = "nim-nix-pkgs";

@@ -11,6 +11,7 @@
   inputs.src-gcplat-2_0_0.ref   = "refs/tags/2.0.0";
   inputs.src-gcplat-2_0_0.owner = "disruptek";
   inputs.src-gcplat-2_0_0.repo  = "gcplat";
+  inputs.src-gcplat-2_0_0.dir   = "";
   inputs.src-gcplat-2_0_0.type  = "github";
   
   inputs."openapi".owner = "nim-nix-pkgs";
