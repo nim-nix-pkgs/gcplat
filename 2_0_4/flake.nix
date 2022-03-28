@@ -11,8 +11,23 @@
   inputs.src-gcplat-2_0_4.ref   = "refs/tags/2.0.4";
   inputs.src-gcplat-2_0_4.owner = "disruptek";
   inputs.src-gcplat-2_0_4.repo  = "gcplat";
-  inputs.src-gcplat-2_0_4.dir   = "";
   inputs.src-gcplat-2_0_4.type  = "github";
+  
+  inputs."jwt".owner = "nim-nix-pkgs";
+  inputs."jwt".ref   = "master";
+  inputs."jwt".repo  = "jwt";
+  inputs."jwt".dir   = "master";
+  inputs."jwt".type  = "github";
+  inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/disruptek/rest".owner = "nim-nix-pkgs";
+  inputs."github.com/disruptek/rest".ref   = "master";
+  inputs."github.com/disruptek/rest".repo  = "github.com/disruptek/rest";
+  inputs."github.com/disruptek/rest".dir   = "";
+  inputs."github.com/disruptek/rest".type  = "github";
+  inputs."github.com/disruptek/rest".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/disruptek/rest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
